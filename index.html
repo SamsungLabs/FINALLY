@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">FINALLY <br> Fast and universal speech enhancement with studio-like quality</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                <span class="author-block">
+                    <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Nicholas Babaev</a><sup>*</sup>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kirill Tamogashev</a><sup>*</sup>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Azat Saginbaev</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ivan Shchekotov</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hanbin Bae</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hosang Sung</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">WonJun Lee</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hoon-Young Cho</a>,
+                </span>
+                <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Pavel Andreev</a><sup>*</sup>,
+                </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Samsung AI Lab <br>NeurIPS 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we address the challenge of speech enhancement in real-world recordings, which often contain various forms of distortion, such as background noise, reverberation, and microphone artifacts.
+            We revisit the use of Generative Adversarial Networks (GANs) for speech enhancement and theoretically show that GANs are naturally inclined to seek the point of maximum density within the conditional clean speech distribution, which, as we argue, is essential for speech enhancement task.
+            We study various feature extractors for perceptual loss to facilitate the stability of adversarial training, developing a methodology for probing the structure of the feature space.
+            This leads us to integrate WavLM-based perceptual loss into MS-STFT adversarial training pipeline, creating an effective and stable training procedure for the speech enhancement model.
+            The resulting speech enhancement model, which we refer to as FINALLY, builds upon the HiFi++ architecture, augmented with a WavLM encoder and a novel training pipeline.
+            Empirical results on various datasets confirm our model's ability to produce clear, high-quality speech at 48 kHz, achieving state-of-the-art performance in the field of speech enhancement.   
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<!-- Model architecture -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3"><center>Model Architecure</center></h2>
+          <div class="level-set has-text-justified">
+            <p>
+                The model is a six-component neural network consisting of WavLM-large, SpectralUNet, Upsampler, WaveUNet, SpectralMaskNet and the Upsample WaveUNet modules. 
+                SpectralUNet is responsible for initial preprocessing of audio in the spectral domain using two-dimensional convolutions.
+                Additionaly, the SSL features, obtained from WavLM-large, are added to spectral ones.
+                The Upsampler is a HiFi-GAN generator-based module that increases the temporal resolution of the input tensor, mapping it to the waveform domain.
+                WaveUNet performs post-processing in the waveform domain and improves the output of the Upsampler by incorporating phase information gleaned directly from the raw input waveform.
+                SpectralMaskNet is applied to perform spectrum-based post-processing and thus, remove any possible artifacts that remained after WaveUNet.
+                Thus, the model alternates between time and frequency domains, allowing for effective audio restoration.
+                Finally, the Upsample WaveUNet is a learnable upsampler of the signal sampling rate, consisting of 
+                the WaveUNet with an additional convolutional upsampling block in the decoder that upsamples the temporal resolution by 3 times.
+                <br>
+            </div>
+          <img src="images/architecture.png" alt="Normal and Anomalous Representations" class="center-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3"><center>Real data samples</center></h2>
+            <div class="level-set has-text-justified">
+              <p>
+                The model is designed to solve the universal speech enhancement 
+                problem and, hence, is capable of tackling diverse distortions types.
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Real data demo -->
+<section class="hero is-light">
+    <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Output</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_input_0.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_output_0.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/input/0.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/output/0.wav"></audio></td>
+            </table>
+        </div>
+        <div class="item item-video2">
+          <table>
+            <tr>
+                <td style="text-align: center; width: 50%;">
+                    <h2 class="subtitle has-text-centered">Input</h2>
+                </td>
+                <td style="text-align: center; width: 50%;">
+                    <h2 class="subtitle has-text-centered">Output</h2>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_input_1.png" class="illustration" onclick="zoom(this)"/></td>
+                <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_output_1.png" class="illustration" onclick="zoom(this)"/></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/input/1.wav"></audio></td>
+                <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/output/1.wav"></audio></td>
+              </tr>
+          </table>
+        </div>
+        
+        <div class="item item-video3">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;">
+                        <h2 class="subtitle has-text-centered">Input</h2>
+                    </td>
+                    <td style="text-align: center; width: 50%;">
+                        <h2 class="subtitle has-text-centered">Output</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_input_2.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_output_2.png" class="illustration" onclick="zoom(this)"/></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/input/2.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/output/2.wav"></audio></td>
+                  </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3"><center>Comparison with UNIVERSE diffusion model</center></h2>
+            <div class="level-set has-text-justified">
+              <p>
+                The model is designed to solve the universal speech enhancement 
+                problem and, hence, is capable of tackling diverse distortions types.
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Real data demo -->
+<section class="hero is-small">
+    <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <table>
+            <tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Ground Truth</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_input.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_gt.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/input/0015.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/gt/0015.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Finally (<b>ours</b>)</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">UNIVERSE</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_ours.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_universe.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/ours/0015.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/universe/0015.wav"></audio></td>
+                </tr>
+          </table>
+        </div>     
+        <div class="item item-video2">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Ground Truth</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_input.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_gt.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/input/0090.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/gt/0090.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Finally (<b>ours</b>)</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">UNIVERSE</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_ours.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_universe.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/ours/0090.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/universe/0090.wav"></audio></td>
+                </tr>
+            </table>
+        </div>
+        <div class="item item-video3">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Ground Truth</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_input.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_gt.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/input/0061.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/gt/0061.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Finally (<b>ours</b>)</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">UNIVERSE</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_ours.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_universe.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/ours/0061.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/universe/0061.wav"></audio></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{TBD,
+        title={?},
+        author={?},
+        booktitle={?},
+        year={}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
