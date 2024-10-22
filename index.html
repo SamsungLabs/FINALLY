@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="funny_se_image.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">FINALLY <br> Fast and universal speech enhancement with studio-like quality</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                <span class="author-block">
+                    <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Nicholas Babaev</a><sup>*</sup>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kirill Tamogashev</a><sup>*</sup>,
+                </span>
+                <span class="author-block">
+                    <a href="https://scholar.google.com/citations?hl=ru&user=VfXlrqoAAAAJ" target="_blank">Azat Saginbaev</a>,
+                </span>
+                <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=1opT3A0AAAAJ&hl=en" target="_blank">Ivan Shchekotov</a>,
+                </span>
+                <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=OvIic1kAAAAJ&hl=en" target="_blank">Hanbin Bae</a>,
+                </span>
+                <span class="author-block">
+                    <a href="https://scholar.google.co.kr/citations?user=rcCzgZAAAAAJ&hl=en" target="_blank">Hosang Sung</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">WonJun Lee</a>,
+                </span>
+                <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hoon-Young Cho</a>,
+                </span>
+                <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=jIl4FywAAAAJ&hl=en" target="_blank">Pavel Andreev</a><sup>*</sup>,
+                </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Samsung Research <br>NeurIPS 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we address the challenge of speech enhancement in real-world recordings, which often contain various forms of distortion, such as background noise, reverberation, and microphone artifacts.
+            We revisit the use of Generative Adversarial Networks (GANs) for speech enhancement and theoretically show that GANs are naturally inclined to seek the point of maximum density within the conditional clean speech distribution, which, as we argue, is essential for speech enhancement task.
+            We study various feature extractors for perceptual loss to facilitate the stability of adversarial training, developing a methodology for probing the structure of the feature space.
+            This leads us to integrate WavLM-based perceptual loss into MS-STFT adversarial training pipeline, creating an effective and stable training procedure for the speech enhancement model.
+            The resulting speech enhancement model, which we refer to as FINALLY, builds upon the HiFi++ architecture, augmented with a WavLM encoder and a novel training pipeline.
+            Empirical results on various datasets confirm our model's ability to produce clear, high-quality speech at 48 kHz, achieving state-of-the-art performance in the field of speech enhancement.   
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<!-- Model architecture -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3"><center>Model Architecure</center></h2>
+          <div class="level-set has-text-justified">
+            <p>
+                The model is a six-component neural network consisting of WavLM-large, SpectralUNet, Upsampler, WaveUNet, SpectralMaskNet and the Upsample WaveUNet modules. 
+                SpectralUNet is responsible for initial preprocessing of audio in the spectral domain using two-dimensional convolutions.
+                Additionaly, the SSL features, obtained from WavLM-large, are added to spectral ones.
+                The Upsampler is a HiFi-GAN generator-based module that increases the temporal resolution of the input tensor, mapping it to the waveform domain.
+                WaveUNet performs post-processing in the waveform domain and improves the output of the Upsampler by incorporating phase information gleaned directly from the raw input waveform.
+                SpectralMaskNet is applied to perform spectrum-based post-processing and thus, remove any possible artifacts that remained after WaveUNet.
+                Thus, the model alternates between time and frequency domains, allowing for effective audio restoration.
+                Finally, the Upsample WaveUNet is a learnable upsampler of the signal sampling rate, consisting of 
+                the WaveUNet with an additional convolutional upsampling block in the decoder that upsamples the temporal resolution by 3 times.
+                <br>
+            </div>
+          <img src="images/FINALLY_nips-1.png" alt="Normal and Anomalous Representations" class="center-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3"><center>Real data samples</center></h2>
+            <div class="level-set has-text-justified">
+              <p>
+                The model is designed to solve the universal speech enhancement 
+                problem and, hence, is capable of tackling diverse distortions types.
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Real data demo -->
+<section class="hero is-light">
+    <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Output</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_input_0.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_output_0.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/input/0.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/output/0.wav"></audio></td>
+            </table>
+        </div>
+        <div class="item item-video2">
+          <table>
+            <tr>
+                <td style="text-align: center; width: 50%;">
+                    <h2 class="subtitle has-text-centered">Input</h2>
+                </td>
+                <td style="text-align: center; width: 50%;">
+                    <h2 class="subtitle has-text-centered">Output</h2>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_input_1.png" class="illustration" onclick="zoom(this)"/></td>
+                <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_output_1.png" class="illustration" onclick="zoom(this)"/></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/input/1.wav"></audio></td>
+                <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/output/1.wav"></audio></td>
+              </tr>
+          </table>
+        </div>
+        
+        <div class="item item-video3">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;">
+                        <h2 class="subtitle has-text-centered">Input</h2>
+                    </td>
+                    <td style="text-align: center; width: 50%;">
+                        <h2 class="subtitle has-text-centered">Output</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_input_2.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/real_data_output_2.png" class="illustration" onclick="zoom(this)"/></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/input/2.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/real_data/output/2.wav"></audio></td>
+                  </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3"><center>Comparison with UNIVERSE diffusion model</center></h2>
+            <div class="level-set has-text-justified">
+              <p>
+                The model is designed to solve the universal speech enhancement 
+                problem and, hence, is capable of tackling diverse distortions types.
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Real data demo -->
+<section class="hero is-small">
+    <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <table>
+            <caption>Monthly savings</caption>
+            <tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Ground Truth</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_input.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_gt.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/input/0015.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/gt/0015.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Finally (<b>ours</b>)</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">UNIVERSE</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_ours.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0015_universe.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/ours/0015.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/universe/0015.wav"></audio></td>
+                </tr>
+          </table>
+        </div>     
+        <div class="item item-video2">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Ground Truth</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_input.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_gt.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/input/0090.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/gt/0090.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Finally (<b>ours</b>)</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">UNIVERSE</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_ours.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0090_universe.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/ours/0090.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/universe/0090.wav"></audio></td>
+                </tr>
+            </table>
+        </div>
+        <div class="item item-video3">
+            <table>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Input</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Ground Truth</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_input.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_gt.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/input/0061.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/gt/0061.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">Finally (<b>ours</b>)</h2></td>
+                    <td style="text-align: center; width: 50%;"><h2 class="subtitle has-text-centered">UNIVERSE</h2></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_ours.png" class="illustration" onclick="zoom(this)"/></td>
+                    <td style="text-align: center; width: 25%;"><img align="center" src="images/0061_universe.png" class="illustration" onclick="zoom(this)"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/ours/0061.wav"></audio></td>
+                    <td style="text-align: center; width: 50%;"><audio controls style="width: 50%;"><source src="samples/ours_vs_universe/universe/0061.wav"></audio></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3"><center>Additional Comparison with HiFi-GAN-2 and UNIVERSE</center></h2>
+            <div class="level-set has-text-justified">
+              <p>
+                
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Real data demo -->
+<section class="hero is-light">
+    <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+            <table style="width: 100%;">
+                <!-- <caption>Comparison with HiFi-GAN-2</caption> -->
+                <caption style="text-align: center; width: 102%;"><h1 class="subtitle has-text-centered">Comparison with HiFi-GAN-2</h1></caption>
+                <tr>
+                    <td style="text-align: center; width: 34%;"><h5 class="subtitle has-text-centered">Input</h5></td>
+                    <td style="text-align: center; width: 34%;"><h5 class="subtitle has-text-centered">HiFi-GAN-2</h5></td>
+                    <td style="text-align: center; width: 34%;"><h5 class="subtitle has-text-centered">Ours</h5></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/f75.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/f75.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/f75.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/f81.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/f81.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/f81.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/f82.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/f82.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/f82.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/f88.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/f88.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/f88.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/m76.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/m76.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/m76.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/m77.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/m77.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/m77.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/m80.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/m80.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/m80.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/m81.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/m81.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/m81.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/m83.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/m83.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/m83.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/input/m98.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/hifigan2/m98.wav"></audio></td>
+                  <td style="text-align: center; width: 34%;"><audio controls style="width: 66%;"><source src="samples/ours_vs_hifigan2/ours/m98.wav"></audio></td>
+                </tr>
+              </table>
+        </div>    
+        <div class="item item-video3">
+            <table style="width: 100%;">
+            <caption style="text-align: center; width: 100%;"><h1 class="subtitle has-text-centered">Comparison with UNIVERSE</h1></caption>
+              <tr>
+                <td style="text-align: center; width: 25%;"><h3 class="subtitle has-text-centered">Input</h3></td>
+                <td style="text-align: center; width: 25%;"><h3 class="subtitle has-text-centered">UNIVERSE</h3></td>
+                <td style="text-align: center; width: 25%;"><h3 class="subtitle has-text-centered">Ours</h3></td>
+                <td style="text-align: center; width: 25%;"><h3 class="subtitle has-text-centered">Ground truth</h3></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0098.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0098.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0098.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0098.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0096.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0096.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0096.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0096.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0095.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0095.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0095.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0095.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0090.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0090.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0090.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0090.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0083.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0083.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0083.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0083.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0076.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0076.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0076.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0076.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0065.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0065.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0065.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0065.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0061.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0061.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0061.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0061.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0060.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0060.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0060.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0060.wav"></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/input/0034.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/universe/0034.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/ours/0034.wav"></audio></td>
+                <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/ours_vs_universe/gt/0034.wav"></audio></td>
+              </tr>
+            </table>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3"><center>Examples of clusters obtained during LMOS studies</center></h2>
+            <div class="level-set has-text-justified">
+              <p>
+                As we mentioned in our paper, we generated clusters with the help of VITS. 
+                In this part we provide the examples of different clusters. 
+                As it can be heard, the diversity of samples from one cluster is not caused by the phrase, speaker or phoneme duration mismatch. 
+                WavLM tends to preserve this structure whilst the L2- space, for instance, usually not.
+                <br>
+            </div>
+            <div class="level-set has-text-justified">
+                <table style="width: 100%;">
+                    <tr>
+                      <td style="text-align: center; width: 25%;">Cluster 1</td>
+                      <td style="text-align: center; width: 25%;">Cluster 2</td>
+                      <td style="text-align: center; width: 25%;">Cluster 3</td>
+                      <td style="text-align: center; width: 25%;">Cluster 4</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_005-8/0.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_009-44/0.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_024-62/0.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_044-27/0.wav"></audio></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_005-8/1.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_009-44/1.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_024-62/1.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_044-27/1.wav"></audio></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_005-8/2.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_009-44/2.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_024-62/2.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_044-27/2.wav"></audio></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_005-8/3.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_009-44/3.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_024-62/3.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_044-27/3.wav"></audio></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_005-8/4.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_009-44/4.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_024-62/4.wav"></audio></td>
+                      <td style="text-align: center; width: 25%;"><audio controls style="width: 90%;"><source src="samples/clusters/p226_044-27/4.wav"></audio></td>
+                    </tr>
+                  </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{TBD,
+        title={?},
+        author={?},
+        booktitle={?},
+        year={}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
